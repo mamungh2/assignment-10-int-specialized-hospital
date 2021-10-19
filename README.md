@@ -14,5 +14,5 @@ You can visit our live website
 - We do not compromise our service quality, so our all equipments are imported from Japan, Germany and USA. Our dedicated specialists, doctors and nurses are very friendly to serve any people any time because theirs living place are in the hospital area.
 
 
-## Thanks for visiting International Specialized Hospital.
+## Thanks for visiting International Specialized Hospital project.
 
