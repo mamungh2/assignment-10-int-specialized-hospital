@@ -1,0 +1,26 @@
+[
+    {
+        "key": 1,
+        "title": "New drugs for cystic fibrosis",
+        "img": "https://i.ibb.co/DY907mv/cristicfibrosis.jpg",
+        "description": "Cystic fibrosis, a hereditary disease that affects more than 30,000 people in the United States, is characterised by thick, sticky mucus that obstructs the airways and traps germs, leading to infections, inflammation and other health complications. Caused by a defective transmembrane conductance regulatory protein (CFTR), people affected by this disease must try to stay away from others to limit their exposure to potentially fatal germs. Until last year, the drugs available for the disease were only effective in people affected by certain mutations. A new combination of drugs approved by the FDA in October 2019 has proven to be effective in people with F508 del, the most common mutation in the CF gene, which accounts for approximately 90% of people with the disease."
+    },
+    {
+        "key": 2,
+        "title": "Gene therapy for cell disease",
+        "img": "https://i.ibb.co/d5LLYTQ/gene-therapy.jpg",
+        "description": "Take a defective gene, fix it, and cure a devastating genetic disease. Getting that to work has been tougher, but scientists at several research centers made remarkable progress with cell disease. The condition—caused by an inherited defect in the gene producing hemoglobin in the red blood cells that leads to deformed, crescent-shaped cells that cause pain, anemia, and organ damage—affects some 100,000 Americans, mostly Black and Hispanic."
+    },
+    {
+        "key": 3,
+        "title": "Stem cell therapy",
+        "img": "https://i.ibb.co/VgKSD5Z/stemcell.jpg",
+        "description": "The incredible potential of stem cells was discovered in the late 1970s, when they were found inside human cord blood. Two specific characteristics make stem cells remarkable: they are unspecialised cells that can renew themselves through cell division even after being inactive, and under certain conditions can be used to make any type of human cell. This discovery has enormous potential and stem cell therapy has already been used to treat leukaemia and other blood disorders, as well as in bone marrow transplantation. Research is currently ongoing to use stem cells to treat spinal cord injuries and a number of neurological conditions such as Alzheimer’s, Parkinson’ and strokes. However, due to the ethical issues surrounding the use of embryonic stem cells, researchers are likely to face many obstacles when developing stem cell-based therapy."
+    },
+    {
+        "key": 4,
+        "title": "New Migraine Medications",
+        "img": "https://i.ibb.co/yBvPV0L/migrane.jpg",
+        "description": "Currently, 12% of the human population struggles with chronic migraines. For years, doctors have treated this condition with multipurpose drugs—like blood pressure medications, anti-seizure drugs, antidepressants, and other pharmaceuticals not explicitly made for treating migraines. This way of managing the problem has proved to be inconsistent and ultimately ineffective. In 2020, however, clinicians began to prescribe a new class of previously introduced drugs that work by blocking a molecule known as calcitonin gene-related peptide (CGRP), significantly reducing the likelihood of a migraine. This prescription will continue to reach sufferers into 2021 and solidify a new channel of migraine treatment."
+    }
+]

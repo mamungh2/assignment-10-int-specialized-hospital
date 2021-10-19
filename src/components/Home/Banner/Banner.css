@@ -1,0 +1,13 @@
+.banner {
+    background-image: url('../../../images/banner.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+}
+.banner-heading {
+    /* margin-left: 70px; */
+    
+    /* color: green; */
+    /* text-align: left; */
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "key": 1,
+        "title": "Heart Treatment",
+        "img": "https://i.ibb.co/pjrz5tZ/heart.jpg",
+        "description": "We have all heart diseases treatment with a very low cost. You can get every heart related operation and treatment here. Treatment for coronary heart disease (CHD) can help manage the symptoms and reduce the risk of further problems. CHD can be managed effectively with a combination of lifestyle changes, medicine and, in some cases, surgery. With the right treatment, the symptoms of CHD can be reduced and the functioning of the heart improved. If you've been diagnosed with coronary heart disease, making simple lifestyle changes can reduce your risk of having further episodes. "
+    },
+    {
+        "key": 2,
+        "title": "Allergic Treatment",
+        "img": "https://i.ibb.co/sQPTqdW/allergy.jpg",
+        "description": "Our allergists will examine your all history with all symptoms, your life style and eating habits. The treatment for an allergy depends on what you're allergic to. In many cases, a GP will be able to offer advice and treatment. They'll advise you about taking steps to avoid exposure to the substance you're allergic to, and can recommend medicines to control your symptoms. The best way to keep your symptoms under control is often to avoid the things you're allergic to, although this is not always practical. Medicines for mild allergies are available from pharmacies without a prescription."
+    },
+    {
+        "key": 3,
+        "title": "Diabetes Treatment",
+        "img": "https://i.ibb.co/0GHn0V7/diabetes.jpg",
+        "description": "We offer regular diabetes test and every patient can get high quality insulin, syringe, and other medicines. Managing the growing incidences of diabetes in England is set to be one of the major clinical challenges of the 21st century. Estimates suggest that the number of people with diabetes is expected to rise to 4.2 million people by 2030, affecting almost 9% of the population. Diabetes is a lifelong condition that causes a person's blood sugar level to become too high. Many more people have blood sugar levels above the normal range, but not high enough to be diagnosed as having diabetes."
+    },
+    {
+        "key": 4,
+        "title": "Eye Treatment",
+        "img": "https://i.ibb.co/Pxxn0p8/eye.jpg",
+        "description": "Your eye is our eye, so we care very seriously it for you. Our expert team are ready available to service you. Dry eye disease affects the surface of the eye and results in a loss of the normal balance of things that keep your eyes comfortable and clear. Tears spread across the cornea or the surface of the eye with every blink. The amount and quality of one’s tear are essential for one’s eyes. At the surface of the eyes, there are many parts that work together in harmony. For example, there are muscles, nerves, glands, tear ducts, connective tissue, that all play their role in keeping the eyes moist."
+    },
+    {
+        "key": 5,
+        "title": "Lab Test",
+        "img": "https://i.ibb.co/hBrYcGD/lab.jpg",
+        "description": "Almost all lab test are available here, you can checkup your full body with a little money. And our equipment are imported from Germany and Japan. Laboratory Medicine Department of International Specialized Hospital has become the leading diagnostic laboratory in Bangladesh by virtue of its uniqueness in offering diverse tests, reliability and prompt turn around time. We provide state-of-the-art reliable diagnostic services 24 hours a day, 7 days a week, for patients, general practitioners and other hospitals in the country. A medical diagnostic laboratory is more than the backbone of a treating physician; it is the very soul of diagnosis."
+    },
+    {
+        "key": 6,
+        "title": "Ambulance 24/7",
+        "img": "https://i.ibb.co/q7xx81s/ambulance.jpg",
+        "description": "Just a call can get a ambulance in front of your door and there is only very little cost for it. International Specialized Hospital provides emergency ambulance service for life support patients. Our ambulances are enriched with modern and advanced technologies for critical patients. We provide ambulance service not only in Dhaka but also in Whole Country. Our dedicated customer support is ready to provide an online ambulance service. Just dial our helpline for instant and emergency support. It is for pre-planned non-emergency medical transfer and Inter-facility transfer, who require skills of an Ambulance care assistant during the journey. It is used for patients to, from or between places of medical treatment, such as hospital, dialysis center, Medical Appointments for non-urgent/ emergency care."
+    }
+]
