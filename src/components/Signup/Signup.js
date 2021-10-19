@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import regform from '../../images/regform.jpg';
 
 const Signup = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const { error, createUserUsingEmailAndPassword, signInUsingGoogle } = useAuth();
+
+    const handleNameChange = e => {
+        setName(e.target.value);
+    }
+    const handleEmailChange = e => {
+        setEmail(e.target.value);
+    }
+    const handlePasswordChange = e => {
+        setPassword(e.target.value);
+    }
+
+    const handleRegistration = () => {
+        createUserUsingEmailAndPassword(name, email, password)
+    }
+
     return (
         <div className="container d-flex align-items-center">
             <div className="w-50 p-5">
@@ -17,22 +37,22 @@ const Signup = () => {
                 </div>
                 <div className="row mb-3">
                     <div className="col-sm-10">
-                        <input type="text" className="form-control" placeholder="Your Name" />
+                        <input onChange={handleNameChange} type="text" className="form-control" placeholder="Your Name" required />
                     </div>
                 </div>
                 <div className="row mb-3">
                     <div className="col-sm-10">
-                        <input type="email" className="form-control" placeholder="Email" />
+                        <input onChange={handleEmailChange} type="email" className="form-control" placeholder="Email" required />
                     </div>
                 </div>
                 <div className="row mb-3">
                     <div className="col-sm-10">
-                        <input type="password" className="form-control" placeholder="Password" />
+                        <input onChange={handlePasswordChange} type="password" className="form-control" placeholder="Password" required />
                     </div>
                 </div>
                 <div className="row mb-0">
                     <div className="col-sm-10">
-                        <button type="button" className="btn btn-primary px-4 fs-bold">Create account</button>
+                        <button onClick={handleRegistration} type="button" className="btn btn-primary px-4 fs-bold">Create account</button>
                     </div>
                 </div>
                 <div className="row mb-0">
@@ -42,10 +62,16 @@ const Signup = () => {
                 </div>
                 <div className="row mb-3">
                     <div className="col-sm-10">
-                        <button type="button" className="btn btn-primary px-4 fs-bold">Sign in with Google </button>
+                        <button onClick={signInUsingGoogle} type="button" className="btn btn-primary px-4 fs-bold">Sign in with Google </button>
+                    </div>
+                </div>
+                <div className="row mb-3">
+                    <div className="col-sm-10">
+                        <div className="text-danger fs-4">{error}</div>
                     </div>
                 </div>
             </form>
+
         </div>
     );
 };

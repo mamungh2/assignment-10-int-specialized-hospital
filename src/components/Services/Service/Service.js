@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Service = ({ service }) => {
-    const { key, title, img, description } = service;
+    const { title, img, description } = service;
     return (
         <div>
             <div className="col h-100">
                 <div className="card h-100">
                     <div className="w-75 mx-auto">
-                        <img className="img-fluid" src={img} className="card-img-top" alt="..." />
+                        <img src={img} className="card-img-top img-fluid" alt="..." />
                     </div>
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>

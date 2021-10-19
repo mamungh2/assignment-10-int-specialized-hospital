@@ -1,9 +1,9 @@
 # INTERNATIONAL SPECIALIZED HOSPITAL
 
-You can visit our live website 
+You can visit our live website  https://int-specialized-hospital.web.app
 
 ## What are included and what you'll get in this website
-- In this project I have used React as Javascript library for building user interfaces, fontawesome library as icon toolkits, Bootstrap as html, css and javascript framework. We have used google's firebase technology as our authentication system and website hosting area. Every pages color are eye friendly, so it is very easy to visit our site. We used some image optimized tool so that website can load very fast.
+- In this project I have used React as Javascript library for building user interfaces, React router for routing various pages without reloading website, fontawesome library as icon toolkits, Bootstrap as html, css and javascript framework. We have used google's firebase technology as our authentication system and website hosting area. Every pages color are eye friendly, so it is very easy to visit our site. We used some image optimized tool so that website can load very fast.
 
 - This website is for health treatment and invention vaccines, proper diseases diagnosis related. Specific treatment are given here with a very low cost.
 

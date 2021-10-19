@@ -4,9 +4,11 @@ import logobrand from '../../../images/logobrand.png';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
-    const searchIcon = <FontAwesomeIcon className="text-success" icon={faSearch}></FontAwesomeIcon>
+    const searchIcon = <FontAwesomeIcon className="text-success" icon={faSearch}></FontAwesomeIcon>;
+    const { user, logOut } = useAuth();
     return (
         <div className="header">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -77,21 +79,25 @@ const Header = () => {
                             </li>
                         </ul>
                         <ul className="navbar-nav me-1 mb-2 mb-lg-0">
-                            <li className="nav-item me-0">
+                            {!user?.displayName ? <li className="nav-item me-0">
                                 <NavLink to="/login"
                                     activeStyle={{
                                         fontWeight: "bold",
                                         color: "red",
                                         borderBottom: "2px solid red"
                                     }}>Login</NavLink>
-                            </li>
-                            <li className="nav-item me-0">
+                            </li> :
+                                <li className="nav-item me-0">
+                                    <span className="text-success">{user?.displayName} </span>
+                                    <button className="btn btn-primary btn-sm fs-6" onClick={logOut}>Logout</button>
+                                </li>}
+                            <li className="nav-item">
                                 <NavLink to="/signup"
                                     activeStyle={{
                                         fontWeight: "bold",
                                         color: "red",
                                         borderBottom: "2px solid red"
-                                    }}>Signup</NavLink>
+                                    }}>Register</NavLink>
                             </li>
                         </ul>
                         <form className="d-flex position-relative align-items-center me-4">
