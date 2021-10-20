@@ -43,7 +43,7 @@ function App() {
               <Services></Services>
             </Route>
 
-            <Route path="/services/:details">
+            <Route exact path="/services/:id">
               <ServiceDetails></ServiceDetails>
             </Route>
 
