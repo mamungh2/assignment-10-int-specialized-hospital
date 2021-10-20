@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
-    const { title, img, description } = service;
+    // destructure object    
+    const { key, title, img, description } = service;
     return (
         <div>
             <div className="col h-100">
@@ -14,7 +16,7 @@ const Service = ({ service }) => {
                         <p className="card-text">{description.slice(0, 100)}</p>
                     </div>
                     <div className="card-footer">
-                        <button className="btn btn-primary px-4">Details</button>
+                        <Link to={`/services/${key}`}><button className="btn btn-primary px-4">Details</button></Link>
                     </div>
                 </div>
             </div>

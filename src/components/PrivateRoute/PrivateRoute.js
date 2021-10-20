@@ -3,7 +3,14 @@ import { Route, Redirect } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user } = useAuth();
+    // get required variable and method from custom useAuth hook
+    const { user, isLoading } = useAuth();
+
+    // set spinner when page is loading
+    if (isLoading) {
+        return <div className="spinner-border mt-4 text-success" role="status"></div>
+    }
+
     return (
         <Route
             {...rest}

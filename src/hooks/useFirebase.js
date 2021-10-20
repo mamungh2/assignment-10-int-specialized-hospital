@@ -5,22 +5,21 @@ import initializeAuthentication from "../components/Login/Firebase/firebasse.ini
 initializeAuthentication();
 
 const useFirebase = () => {
+    // use state function to store data
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
+    // get authentication and provider from google firebase authentication
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
+    // sign in method using google
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider);
-        // .then(result => {
-        //     setError('');
-        // })
-        // .catch(error => {
-        //     setError(error.message);
-        // })
     }
 
+    // create new user using name, email and password
     const createUserUsingEmailAndPassword = (name, email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
@@ -32,6 +31,7 @@ const useFirebase = () => {
             })
     }
 
+    // set user name when creating a new user or sign in using google
     const setUserName = (name) => {
         updateProfile(auth.currentUser, { displayName: name })
             .then(result => { })
@@ -40,27 +40,27 @@ const useFirebase = () => {
             })
     }
 
+    // sign in method using email and password
     const signInUsingEmailAndPassword = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password);
-        // .then(result => {
-        //     setUser(result.user);
-        //     setError('');
-        // })
-        // .catch(error => {
-        //     setError(error.message);
-        // })
     }
 
-
+    // set observer method to observer a user sign in or not
     useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user);
             }
+            else {
+                setUser({});
+            }
+            setIsLoading(false);
         })
     }, []);
 
+    // set log out method to log out a user
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(result => {
                 setUser({});
@@ -69,10 +69,11 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message);
             })
+            .finally(() => setIsLoading(false));
     }
 
     return {
-        user, setError, error, signInUsingGoogle, createUserUsingEmailAndPassword, signInUsingEmailAndPassword, logOut
+        user, setError, isLoading, setIsLoading, error, signInUsingGoogle, createUserUsingEmailAndPassword, signInUsingEmailAndPassword, logOut
     }
 }
 

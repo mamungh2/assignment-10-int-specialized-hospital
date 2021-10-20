@@ -7,6 +7,7 @@ import Researches from '../Researches/Researches';
 const Home = () => {
     return (
         <div>
+            {/* call various components to display in home page */}
             <Banner></Banner>
             <Appointment></Appointment>
             <Services></Services>

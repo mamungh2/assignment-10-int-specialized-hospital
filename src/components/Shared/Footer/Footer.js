@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faYoutubeSquare, faInstagramSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-
+    // social icons from fontawesome
     const fbIcon = <FontAwesomeIcon className="fs-2" style={{ color: "#4267B2" }} icon={faFacebookSquare} />
     const youtubeIcon = <FontAwesomeIcon className="fs-2" style={{ color: "red" }} icon={faYoutubeSquare} />
     const instagramIcon = <FontAwesomeIcon className="fs-2" style={{ color: "#C13584" }} icon={faInstagramSquare} />
@@ -21,17 +21,15 @@ const Footer = () => {
                         <p className="ms-0">37/1, Adams road, Boston,<br />
                             massachusetts, USA.</p>
                     </div>
-
-
                 </div>
                 <div className="col-md-4">
                     <p className="text-start">About Us &nbsp; | &nbsp; Terms & Conditions <br />
                         Privacy Policy &nbsp; | &nbsp; Site Map <br />
                         Advertise &nbsp; | &nbsp; Announcements <br />
                         Blogs &nbsp; | &nbsp; Achievement
-
                     </p>
                 </div>
+                {/* social icons */}
                 <div className="col-md-4">
                     <p>Social Links</p>
                     <div >
@@ -40,7 +38,6 @@ const Footer = () => {
                         <span className="me-2">{instagramIcon}</span>
                         <span className="me-2">{twitterIcon}</span>
                     </div>
-
                 </div>
             </div>
             <p className="mt-4 mb-0">Copyright &copy; 2021 International Specialized Hospital, All Rights Reserved.</p>
